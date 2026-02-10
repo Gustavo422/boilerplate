@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "prettier-plugin-packagejson",
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindStylesheet": "css/globals.css",
+  "tailwindFunctions": ["clsx"]
+}

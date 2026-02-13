@@ -6,7 +6,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-project: var(--project);
+  --color-my-brand-color: var(--my-brand-color);
   --color-h: var(--color-red-700);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -52,7 +52,7 @@
   --radius: 0.625rem;
   --background: oklch(96.7% 0.003 264.542);
   --foreground: oklch(0.13 0.028 261.692);
-  --project: oklch(51.484% 0.14703 254.686);
+  --my-brand-color: oklch(51.484% 0.14703 254.686);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.13 0.028 261.692);
   --popover: oklch(1 0 0);
@@ -87,7 +87,7 @@
 .dark {
   --background: oklch(0.13 0.028 261.692);
   --foreground: oklch(0.985 0.002 247.839);
-  --project: oklch(51.484% 0.14703 254.686);
+  --my-brand-color: oklch(51.484% 0.14703 254.686);
   --card: oklch(16.97% 0.046 265.13);
   --card-foreground: oklch(0.985 0.002 247.839);
   --popover: oklch(0.21 0.034 264.665);
@@ -126,4 +126,17 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
 }

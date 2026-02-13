@@ -27,7 +27,7 @@ interface RootLayoutProps {
 export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className="font-sans antialiased">
+      <body className="m-0! overflow-x-hidden p-0! antialiased">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

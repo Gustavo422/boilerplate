@@ -18,12 +18,14 @@ export function ItemHeader({ childrenItems, trigger, link }: ItemHeaderProps) {
       <HoverCardTrigger
         asChild
         className={clsx("hover:cursor-pointer", {
-          "hover:text-header": link,
+          "hover:text-my-brand-color hover:underline": link,
         })}
       >
         <button type="button">
           {link ? (
-            <Link href={link}> {trigger}</Link>
+            <div className="flex items-center justify-center gap-x-1">
+              <Link href={link}> {trigger}</Link>
+            </div>
           ) : (
             <p className="text-[15px] sm:text-base">{trigger}</p>
           )}
@@ -39,7 +41,7 @@ export function ItemHeader({ childrenItems, trigger, link }: ItemHeaderProps) {
               {childrenItems.map((child, index) => (
                 <li key={index} className="">
                   <Link
-                    className="flex items-start gap-x-3 rounded-sm p-2.5 hover:bg-accent/85 hover:text-header"
+                    className="hover:text-header flex items-start gap-x-3 rounded-sm p-2.5 hover:bg-accent/85"
                     href={child.link}
                   >
                     <span className="flex flex-col">

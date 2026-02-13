@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
 :root {
-  --project-h: 56px;
-}
-
-@media (min-width: 640px) {
-  :root {
-    --project-h: 56px;
-  }
+  --my-header-h: 56px;
 }

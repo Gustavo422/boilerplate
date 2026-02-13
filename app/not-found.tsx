@@ -10,16 +10,23 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <div className="flex h-screen w-full items-center justify-center bg-background">
-      <div className="flex h-fit w-fit flex-col items-center justify-center gap-3 rounded-xl border p-4 md:p-6">
-        <h1 className="text-center text-6xl font-bold md:text-7xl lg:text-8xl">
-          404
-        </h1>
-        <h2 className="text-center text-2xl md:text-3xl lg:text-4xl">
-          Page Not Found!
-        </h2>
+      <div className="flex flex-col items-center justify-start rounded-md border border-accent-foreground p-4 text-center text-accent-foreground dark:border-accent">
+        <span>
+          <h1 className="text-[80px] font-bold tracking-tight text-balance">
+            404
+          </h1>
+          <h2 className="mb-8 scroll-m-20 text-4xl font-normal tracking-tight">
+            Page not found!
+          </h2>
+        </span>
         <Link href="/">
-          <Button type="button" className="cursor-pointer">
-            <HomeIcon /> Back to Home Page
+          <Button
+            type="button"
+            className="mb-8 cursor-pointer bg-my-brand-color text-xl text-accent-foreground hover:text-accent"
+            size="lg"
+          >
+            <HomeIcon data-icon="inline-start" className="min-h-6 min-w-6" />
+            Back to Home Page
           </Button>
         </Link>
       </div>

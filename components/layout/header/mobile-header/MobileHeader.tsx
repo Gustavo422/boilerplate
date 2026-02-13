@@ -24,7 +24,7 @@ export default function MobileHeader({
 }: MobileHeaderProps) {
   //const session = useSession();
   return (
-    <NavigationMenu className={twMerge("flex max-w-full bg-auto", className)}>
+    <NavigationMenu className={twMerge("flex max-w-full", className)}>
       <NavigationMenuList className="flex w-screen items-center justify-between px-2">
         <NavigationMenuItem>
           <Logo homeLink={homeLink} />

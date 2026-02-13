@@ -26,7 +26,7 @@ export default function DesktopHeader({
 }: DesktopHeaderProps) {
   //const session = useSession();
   return (
-    <NavigationMenu className={twMerge("flex max-w-full bg-auto", className)}>
+    <NavigationMenu className={twMerge("flex max-w-full", className)}>
       <NavigationMenuList className="flex w-screen items-center justify-between px-2">
         <>
           <NavigationMenuItem className="flex items-center justify-center gap-x-4">
